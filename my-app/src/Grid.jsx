@@ -1,3 +1,7 @@
-export function Grid(){
-    /* Escrobe aquí tu código */
+/*Grid.jsx */
+export function Grid({items}){
+    return <div className="grid">
+        {items.map(e=><div className="card"><h2>{e.title}</h2><p>{e.ref}</p></div>)}       
+    </div>
 }
+
